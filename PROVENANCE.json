@@ -1,0 +1,301 @@
+{
+  "schema": "site-reforge-local/preview-provenance@1",
+  "note": "This tree is the handoff build in dist/ PLUS the hardening below. It is not the deliverable.",
+  "previewUrl": "https://sgencms.github.io/eyecarecatoosa",
+  "realSite": "https://www.eyecarecatoosa.com",
+  "structureModel": "https://eyetrendsclearlake.com",
+  "changes": {
+    "pages": 158,
+    "robotsMeta": 158,
+    "referrerMeta": 158,
+    "ogUrlRepointed": 158,
+    "ogDescriptionReplaced": 158,
+    "twitterDescriptionReplaced": 156,
+    "ogImageRemoved": 156,
+    "twitterImageRemoved": 156,
+    "ogFeaturedImageRemoved": 3,
+    "jsonLdRemoved": 470,
+    "formsMarkedInert": 301,
+    "practiceFormsNeutralised": 5,
+    "practiceSubmitButtonsDisabled": 5,
+    "formNoticesAdded": 5,
+    "offlineNoticesReplaced": 5,
+    "previewStylesLinked": 158,
+    "mapKeysRemoved": 3,
+    "crlfPagesNormalised": 158,
+    "filesNotShipped": [
+      "llms.txt",
+      "sitemap.xml",
+      "_headers",
+      "_redirects"
+    ]
+  },
+  "verification": {
+    "tool": "src/tools/preview-verify.mjs (handoff build)",
+    "servedAs": "local GitHub Pages emulation under /eyecarecatoosa/ (src/tools/preview-serve.mjs)",
+    "verdict": "PASS",
+    "pages": 158,
+    "hardening": {
+      "robotsNoindex": 158,
+      "referrer": 158,
+      "noJsonLd": 158,
+      "noBanner": 158,
+      "previewStyles": 158,
+      "canonicalReal": 158,
+      "ogUrlPreview": 158,
+      "ogDescDisclosure": 158,
+      "noOgImage": 158,
+      "lfOnly": 158,
+      "iframesChecked": 3,
+      "patientFormsNoSubmitControl": 5,
+      "formsTotal": 301,
+      "formsInert": 301,
+      "patientForms": 5,
+      "patientFormsNeutral": 5,
+      "formNotices": 5,
+      "titlePrefixed": 0,
+      "oneH1": 158,
+      "socialTitles": 316
+    },
+    "identity": {
+      "identical": 75,
+      "added": [
+        ".gitattributes",
+        ".gitignore",
+        ".nojekyll",
+        "PROVENANCE.json",
+        "PROVENANCE.md",
+        "README.md",
+        "robots.txt",
+        "styles/preview.css"
+      ]
+    },
+    "secrets": {
+      "scanned": 171,
+      "hits": 0,
+      "note": "final tree, docs included; asserted by the post-write re-check"
+    },
+    "references": {
+      "checked": 27195,
+      "byKind": {
+        "href": 22532,
+        "src": 1454,
+        "action": 296,
+        "srcset": 2910,
+        "css url()": 3
+      },
+      "escapesRoot": 0,
+      "missing": 0,
+      "rootRelative": 0,
+      "notFoundAbsolute": 157
+    },
+    "pagesNotRebuilt": {
+      "markersSearched": 13,
+      "hits": 0
+    },
+    "render": {
+      "widths": [
+        1440,
+        390
+      ],
+      "pageLoads": 314,
+      "responses400": 0,
+      "brokenImages": 0,
+      "consoleErrors": 0,
+      "outsidePrefix": 0,
+      "overflow390": 0,
+      "bannerShown": 0,
+      "browserCancelled": [],
+      "deep404": [
+        {
+          "path": "no-such-page/",
+          "status": 404,
+          "subresourceFailures": [],
+          "broken": [],
+          "banner": false,
+          "cssRules": 617
+        },
+        {
+          "path": "a/b/c/d/no-such-page",
+          "status": 404,
+          "subresourceFailures": [],
+          "broken": [],
+          "banner": false,
+          "cssRules": 617
+        },
+        {
+          "path": "eye-care-services/nope/",
+          "status": 404,
+          "subresourceFailures": [],
+          "broken": [],
+          "banner": false,
+          "cssRules": 617
+        }
+      ],
+      "search": {
+        "results": 10,
+        "outside": [],
+        "sample": [
+          "/eyecarecatoosa/your-eye-health/vision-over-40/dry-eye-after-menopause/",
+          "/eyecarecatoosa/eye-care-services/",
+          "/eyecarecatoosa/your-eye-health/eye-conditions/"
+        ],
+        "firstResultStatus": 200
+      },
+      "practiceFormsJsOn": [
+        {
+          "route": "contact-us/appointment-request-form/",
+          "prevented": true,
+          "stayed": true,
+          "action": "",
+          "notice": true,
+          "requestsAfterSubmit": []
+        },
+        {
+          "route": "contact-us/patient-registration-form/",
+          "prevented": true,
+          "stayed": true,
+          "action": "",
+          "notice": true,
+          "requestsAfterSubmit": []
+        }
+      ],
+      "practiceFormsJsOff": [
+        {
+          "route": "contact-us/appointment-request-form/",
+          "negative": {
+            "enterAndClickRequests": 0,
+            "enter": {
+              "requests": [],
+              "stayed": true
+            },
+            "click": {
+              "requests": [],
+              "stayed": true,
+              "clickHitButton": true
+            }
+          },
+          "control": {
+            "requestsCaught": [
+              "POST /eyecarecatoosa/contact-us/appointment-request-form/"
+            ],
+            "clickHitButton": true
+          }
+        },
+        {
+          "route": "contact-us/patient-registration-form/",
+          "negative": {
+            "enterAndClickRequests": 0,
+            "enter": {
+              "requests": [],
+              "stayed": true
+            },
+            "click": {
+              "requests": [],
+              "stayed": true,
+              "clickHitButton": true
+            }
+          },
+          "control": {
+            "requestsCaught": [
+              "POST /eyecarecatoosa/contact-us/patient-registration-form/"
+            ],
+            "clickHitButton": true
+          }
+        }
+      ]
+    },
+    "thirdPartyFrames": {
+      "inMarkup": {
+        "maps.google.com": [
+          "/hours-location/",
+          "/",
+          "/location/practice-location-1/"
+        ]
+      },
+      "measuredHosts": {
+        "maps.google.com": {
+          "requests": 6,
+          "methods": {
+            "GET": 6
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "www.google.com": {
+          "requests": 73,
+          "methods": {
+            "GET": 73
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "maps.gstatic.com": {
+          "requests": 12,
+          "methods": {
+            "GET": 12
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "maps.googleapis.com": {
+          "requests": 110,
+          "methods": {
+            "GET": 89,
+            "POST": 18,
+            "OPTIONS": 3
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "fonts.googleapis.com": {
+          "requests": 12,
+          "methods": {
+            "GET": 12
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "fonts.gstatic.com": {
+          "requests": 12,
+          "methods": {
+            "GET": 12
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "places.googleapis.com": {
+          "requests": 4,
+          "methods": {
+            "POST": 3,
+            "OPTIONS": 1
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        }
+      },
+      "note": "measured by preview-verify.mjs with every child target auto-attached; request counts are over the measured page loads"
+    }
+  }
+}
