@@ -32,7 +32,7 @@
   },
   "verification": {
     "tool": "src/tools/preview-verify.mjs (handoff build)",
-    "servedAs": "local GitHub Pages emulation under /eyecarecatoosa/ (src/tools/preview-serve.mjs)",
+    "servedAs": "https://sgencms.github.io/eyecarecatoosa/",
     "verdict": "PASS",
     "pages": 158,
     "hardening": {
@@ -251,8 +251,8 @@
           "requests": 110,
           "methods": {
             "GET": 89,
-            "POST": 18,
-            "OPTIONS": 3
+            "OPTIONS": 3,
+            "POST": 18
           },
           "pages": [
             "hours-location/",

@@ -104,7 +104,7 @@ tree and from a browser rendering of it. None was taken from the tool that wrote
 - **Reference audit**: 27,195 local references (22,532 href, 1,454 src, 296 action, 2,910 srcset, 3 css url()) were resolved against the file that carries each one.
   - 0 escape the site root, 0 point at a missing file, and 0 are root-relative.
   - The exception is `404.html`, whose 157 references are all absolute under `/eyecarecatoosa/` by design.
-- **Rendering at the preview's subpath** (served exactly as GitHub Pages serves a project site: only under /eyecarecatoosa/, a missing path answered by 404.html):
+- **Rendering at the preview's subpath** (the live GitHub Pages site):
   - Every page was loaded in headless Chrome at 1440 and 390 px (314 loads), with lazy images forced to load.
   - The result was 0 responses ≥ 400, 0 broken images, 0 console errors, 0 requests outside the prefix, 0 horizontal overflow at 390, and no banner on any load (each page rendered at least 200 characters of text for that absence to be read from).
   - Third parties: every child target (the map frames included) was attached and its network watched. Off-site requests came only from inside the map frame on the 3 map pages, to `fonts.googleapis.com`, `fonts.gstatic.com`, `maps.google.com`, `maps.googleapis.com`, `maps.gstatic.com`, `places.googleapis.com` and `www.google.com` (21 of them POST). The page itself contacted no third party, and no other page contacted any.
